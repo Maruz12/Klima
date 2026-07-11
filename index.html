@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMmVjYzcxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNDk4ZGIiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8IS0tIFDFgmF0ZWsgxZtuaWVndSB3IHRsZSAvIHBvIHByYXdlaiAtLT4KICA8cGF0aCBkPSJNMjAgOSBWMjMgTTE2IDEyIEwyMCAxNiBMMjQgMTIgTTE2IDIwIEwyMCAxNiBMMjQgMjAgTTEzIDE2IEgyNyIgc3Ryb2tlPSIjMzQ5OGRiIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC44Ii8+CiAgPCEtLSBEeW5hbWljem55IHppZWxvbnkgbGnFm8SHIG5hIHBpZXJ3c3p5bSBwbGFuaWUgcG8gbGV3ZWogdHdvcnrEhWN5IGxpdGVyxJkgRSAtLT4KICA8cGF0aCBkPSJNMTYgNCBDOCA0IDQgMTAgNCAxOCBDNCAyNiAxMiAyOCAxNiAyOCBDMTQgMjQgMTQgMjAgMTYgMTYgQzEyIDE2IDEwIDE0IDExIDExIEMxMyAxMyAxNSAxNCAxNyAxMyBDMTUgMTAgMTUgNiAxNiA0IFoiIGZpbGw9IiMyZWNjNzEiLz4KPC9zdmc+">
   <!-- ===== SEO PRIMARY ===== -->
   <title>Eko-Klima Murowana Goślina | Montaż Klimatyzacji, Pomp Ciepła, Rekuperacji</title>
   <meta name="description" content="Eko-Klima – sprzedaż, montaż i serwis klimatyzacji, pomp ciepła oraz rekuperacji w Murowanej Goślinie i okolicach Poznania. Autoryzowany partner Haier. Zadzwoń: 502 570 470.">
@@ -229,7 +229,7 @@
     /* ============ HERO ============ */
     .hero {
       min-height: 100svh;
-      padding: 64px 0 0;
+      padding: 6px 0 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
@@ -672,11 +672,40 @@
       .nav-links.open { display: flex; }
       .nav-links a { font-size: 1.1rem; }
 
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-visual { height: 44vmax; min-height: 260px; }
-      .hero-content { padding: 3rem 1.5rem 2rem; order: 2; }
-      .hero-visual { order: 1; }
-      .hero-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        height: auto;
+        overflow: visible;
+      }
+      .hero-visual {
+        order: 1;
+        height: 52vmax;
+        min-height: 240px;
+        max-height: 340px;
+      }
+      .hero-content {
+        order: 2;
+        padding: 2rem 1.25rem 3rem;
+        width: 100%;
+        overflow: visible;
+      }
+      .eyebrow {
+        font-size: .72rem;
+        white-space: normal;
+        word-break: break-word;
+      }
+      .hero h1 {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+      }
+      .hero-desc {
+        font-size: .95rem;
+      }
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero-stats { display: grid; grid-template-columns: 1fr 1fr 1fr;}
       .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
       .form-row-double { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr; }
@@ -713,7 +742,7 @@
       Indywidualne podejście, profesjonalna realizacja, pełna opieka posprzedażowa.
     </p>
     <div class="hero-actions">
-      <a href="#kontakt" class="btn-primary">
+      <a href="tel:+48502570470" class="btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
         Zadzwoń teraz
       </a>
@@ -742,7 +771,7 @@
     <p class="section-label reveal">Usługi</p>
     <h2 class="reveal">Pełna oferta<br>w jednym miejscu.</h2>
     <p class="section-intro reveal">
-      Zajmujemy się wszystkim — od doboru urządzenia dopasowanego do Twojego domu lub firmy, przez profesjonalny montaż, aż po regularne przeglądy i serwis.
+      Zajmujemy się wszystkim - od doboru urządzenia dopasowanego do Twojego domu lub firmy, przez profesjonalny montaż, aż po regularne przeglądy i serwis.
     </p>
 
     <div class="services-grid reveal">
@@ -758,35 +787,35 @@
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><path d="M7 7l1.5 1.5M15.5 15.5L17 17M7 17l1.5-1.5M15.5 8.5L17 7"/></svg>
         </div>
         <h3>Pompy ciepła</h3>
-        <p>Ekologiczne ogrzewanie powietrzem. Instalacja pomp ciepła powietrze-woda — oszczędna alternatywa dla tradycyjnych systemów grzewczych z możliwością dofinansowania.</p>
+        <p>Ekologiczne ogrzewanie powietrzem. Instalacja pomp ciepła powietrze-woda - oszczędna alternatywa dla tradycyjnych systemów grzewczych z możliwością dofinansowania.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/><path d="M2 12h4M18 12h4M12 2v4M12 18v4"/></svg>
         </div>
         <h3>Rekuperacja</h3>
-        <p>Systemy wentylacji z odzyskiem ciepła. Świeże powietrze przez cały rok bez strat energii. Ideal dla domów szczelnych i energooszczędnych.</p>
+        <p>Systemy wentylacji z odzyskiem ciepła. Świeże powietrze przez cały rok bez strat energii. Idealne dla domów szczelnych i energooszczędnych.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
         </div>
         <h3>Serwis i przeglądy</h3>
-        <p>Regularne czyszczenie kanałów, filtrów i odpowietrzników. Diagnostyka, konserwacja i naprawy. Przypominamy o terminie przeglądu — sam nie musisz pamiętać.</p>
+        <p>Regularne czyszczenie kanałów, filtrów i odpowietrzników. Diagnostyka, konserwacja i naprawy. Przypominamy o terminie przeglądu - sam nie musisz pamiętać.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
         <h3>Doradztwo i dobór</h3>
-        <p>Bezpłatna wizja lokalna. Pomagamy wybrać urządzenie idealnie dopasowane do metrażu, budżetu i potrzeb — bez zbędnego przepłacania.</p>
+        <p>Bezpłatna wizja lokalna. Pomagamy wybrać urządzenie idealnie dopasowane do metrażu, budżetu i potrzeb - bez zbędnego przepłacania.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">
           <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
         </div>
         <h3>Gwarancja i opieka</h3>
-        <p>Serwis gwarancyjny i pogwarancyjny. Pełna opieka po montażu — jesteśmy do dyspozycji, kiedy cokolwiek przestanie działać tak jak powinno.</p>
+        <p>Serwis gwarancyjny i pogwarancyjny. Pełna opieka po montażu - jesteśmy do dyspozycji, kiedy cokolwiek przestanie działać tak jak powinno.</p>
       </div>
     </div>
   </div>
@@ -798,7 +827,7 @@
     <p class="section-label reveal">Proces</p>
     <h2 class="reveal">Prosto i bez niespodzianek.</h2>
     <p class="section-intro reveal">
-      Od pierwszego kontaktu do gotowej instalacji — wiemy, jak przeprowadzić montaż sprawnie i z minimalną ingerencją w Twój dzień.
+      Od pierwszego kontaktu do gotowej instalacji - wiemy, jak przeprowadzić montaż sprawnie i z minimalną ingerencją w Twój dzień.
     </p>
 
     <div class="steps reveal">
@@ -832,10 +861,10 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <p class="section-label">O firmie</p>
-        <h2>Komfort w każdych warunkach — to nasza specjalność.</h2>
+        <h2>Komfort w każdych warunkach - to nasza specjalność.</h2>
         <p>Eko-Klima to firma Aleksandry Maślankiewicz działająca w Murowanej Goślinie od 2019 roku. Jesteśmy autoryzowanym partnerem Haier i specjalizujemy się w sprzedaży, montażu oraz serwisie systemów klimatyzacyjnych dla klientów indywidualnych i firm.</p>
-        <p>Nasz wykwalifikowany zespół posiada duże doświadczenie i wiedzę w branży. Największym naszym atutem jest podejście do klienta — słuchamy, doradzamy i wykonujemy pracę dokładnie, szybko i z troską o każdy detal.</p>
-        <p>Codziennie wstajemy z myślą o tym, jak jak najlepiej zrealizować kolejną instalację. Jesteśmy punktualni i po uzgodnieniu terminu — nie zawiedziemy.</p>
+        <p>Nasz wykwalifikowany zespół posiada duże doświadczenie i wiedzę w branży. Największym naszym atutem jest podejście do klienta - słuchamy, doradzamy i wykonujemy pracę dokładnie, szybko i z troską o każdy detal.</p>
+        <p>Codziennie wstajemy z myślą o tym, jak jak najlepiej zrealizować kolejną instalację. Jesteśmy punktualni i po uzgodnieniu terminu - nie zawiedziemy.</p>
       </div>
       <div class="about-values reveal">
         <div class="value-item">
@@ -868,12 +897,12 @@
   <div class="section-inner">
     <p class="section-label reveal">Opinie</p>
     <h2 class="reveal">Co mówią nasi klienci.</h2>
-    <p class="section-intro reveal">Ocena 5.0 w Google i konsekwentnie pozytywne recenzje — budowane przez lata rzetelnej pracy.</p>
+    <p class="section-intro reveal">Ocena 5.0 w Google i konsekwentnie pozytywne recenzje - budowane przez lata rzetelnej pracy.</p>
 
     <div class="reviews-grid">
       <div class="review-card reveal">
         <div class="stars">★★★★★</div>
-        <p class="review-text">„Super profesjonalna firma! Profesjonalność w każdym calu — doradztwo, wykonanie, podejście do klienta. Wszystko na najwyższym poziomie! Jesteśmy bardzo zadowoleni i polecamy gorąco."</p>
+        <p class="review-text">„Super profesjonalna firma! Profesjonalność w każdym calu - doradztwo, wykonanie, podejście do klienta. Wszystko na najwyższym poziomie! Jesteśmy bardzo zadowoleni i polecamy gorąco."</p>
         <div class="reviewer">Klient z Murowanej Gośliny</div>
       </div>
       <div class="review-card reveal">
@@ -883,7 +912,7 @@
       </div>
       <div class="review-card reveal">
         <div class="stars">★★★★★</div>
-        <p class="review-text">„Fantastycznie wykonana robota — szybko, w terminie, czysto i na temat! Stawki atrakcyjne, wiedza ogromna, dużo celnych porad i jeszcze więcej praktycznych rozwiązań. Nic tylko polecać!"</p>
+        <p class="review-text">„Fantastycznie wykonana robota - szybko, w terminie, czysto i na temat! Stawki atrakcyjne, wiedza ogromna, dużo celnych porad i jeszcze więcej praktycznych rozwiązań. Nic tylko polecać!"</p>
         <div class="reviewer">Mateusz, okolice Poznania</div>
       </div>
       <div class="review-card reveal">
@@ -900,7 +929,7 @@
   <div class="section-inner">
     <p class="section-label reveal">Kontakt</p>
     <h2 class="reveal">Zróbmy to razem.</h2>
-    <p class="section-intro reveal">Napisz lub zadzwoń — odpowiemy szybko i umówimy się na bezpłatną wizję lokalną.</p>
+    <p class="section-intro reveal">Napisz lub zadzwoń - odpowiemy szybko i umówimy się na bezpłatną wizję lokalną.</p>
 
     <div class="contact-grid">
       <div class="contact-info reveal">
@@ -1021,12 +1050,12 @@
 
   // FAQ
   const faqs = [
-    { q: "Ile kosztuje montaż klimatyzacji w Murowanej Goślinie?", a: "Koszt zależy od rodzaju urządzenia i warunków lokalowych. Oferujemy bezpłatną wizję lokalną i indywidualną wycenę bez ukrytych kosztów. Zadzwoń pod 502 570 470 — odpowiemy szybko." },
-    { q: "Jak długo trwa montaż klimatyzatora?", a: "Standardowy montaż klimatyzatora split w domu lub mieszkaniu zajmuje od 4 do 8 godzin — czyli jeden dzień roboczy. Przychodzimy punktualnie i zostawiamy po sobie porządek." },
+    { q: "Ile kosztuje montaż klimatyzacji?", a: "Koszt zależy od rodzaju urządzenia i warunków lokalowych. Oferujemy bezpłatną wizję lokalną i indywidualną wycenę bez ukrytych kosztów. Zadzwoń pod 502 570 470 - odpowiemy szybko." },
+    { q: "Jak długo trwa montaż klimatyzatora?", a: "Standardowy montaż klimatyzatora split w domu lub mieszkaniu zajmuje od 4 do 8 godzin - czyli jeden dzień roboczy. Przychodzimy punktualnie i zostawiamy po sobie porządek." },
     { q: "Czy wykonujecie serwis i przeglądy klimatyzacji?", a: "Tak. Wykonujemy czyszczenie filtrów, kanałów i odpowietrzników, diagnostykę oraz naprawy gwarancyjne i pogwarancyjne. Przypominamy klientom o terminie corocznego przeglądu." },
-    { q: "Jakie marki klimatyzatorów montujecie?", a: "Jesteśmy autoryzowanym partnerem Haier. Montujemy również urządzenia Mitsubishi, Panasonic, Gree i innych wiodących producentów — dobieramy markę do budżetu i potrzeb klienta." },
+    { q: "Jakie marki klimatyzatorów montujecie?", a: "Jesteśmy autoryzowanym partnerem Haier. Montujemy również urządzenia Mitsubishi, Panasonic, Gree i innych wiodących producentów - dobieramy markę do budżetu i potrzeb klienta." },
     { q: "Czy mogę dostać dofinansowanie na pompę ciepła?", a: "Tak. Przy wymianie nieefektywnego źródła ciepła można skorzystać z rządowego programu \"Moje Ciepło\". Pomagamy dobrać urządzenie kwalifikujące się do dotacji i doradzamy w formalnościach." },
-    { q: "Na jakim terenie działacie?", a: "Działamy przede wszystkim w Murowanej Goślinie i okolicach Poznania — województwo Wielkopolskie. W przypadku większych realizacji możemy wyjechać dalej — zadzwoń i ustalmy szczegóły." }
+    { q: "Na jakim terenie działacie?", a: "Działamy przede wszystkim w Murowanej Goślinie i okolicach Poznania - województwo Wielkopolskie. W przypadku większych realizacji możemy wyjechać dalej — zadzwoń i ustalmy szczegóły." }
   ];
 
   const faqList = document.getElementById('faqList');
